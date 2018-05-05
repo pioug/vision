@@ -1,0 +1,17 @@
+{
+  "name": "vision",
+  "version": "1.0.0",
+  "description": "Headless browser as a service",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pioug/vision.git"
+  },
+  "author": "Gilles Piou <gilles.piou@gmail.com> (https://www.piou.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "eslint": "4.19.1",
+    "prettier": "1.12.1"
+  }
+}
