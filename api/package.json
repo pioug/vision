@@ -1,0 +1,29 @@
+{
+  "name": "vision.api",
+  "version": "1.0.0",
+  "description": "Microservice to take full page screenshot",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "now",
+    "redeploy": "now rm vision.api --yes && npm run deploy",
+    "start": "micro"
+  },
+  "author": "Gilles Piou <gilles.piou@gmail.com> (https://www.piou.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "9.3.0",
+    "puppeteer": "1.3.0"
+  },
+  "now": {
+    "public": true,
+    "type": "docker",
+    "name": "vision.api",
+    "alias": "vision.api",
+    "scale": {
+      "sfo1": {
+        "min": 0,
+        "max": "auto"
+      }
+    }
+  }
+}
