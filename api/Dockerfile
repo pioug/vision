@@ -16,7 +16,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     apt-get update && \
     apt-get install -y google-chrome-stable
 
-RUN apt-get install -y fonts-noto
+RUN apt-get install -y fonts-noto fonts-noto-color-emoji
 
 COPY package.json ./
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false npm install
