@@ -8,10 +8,5 @@
     "url": "git+https://github.com/pioug/vision.git"
   },
   "author": "Gilles Piou <gilles.piou@gmail.com> (https://www.piou.io/)",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "8.2.3",
-    "eslint": "4.19.1",
-    "prettier": "1.12.1"
-  }
+  "license": "MIT"
 }
