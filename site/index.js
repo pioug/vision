@@ -49,8 +49,8 @@ class Vision extends Component {
 class Home extends Component {
   submit(e) {
     e.preventDefault();
-    console.log(e.target[0].value);
-    window.location.replace(`https://visionapi-aqfcntfagh.now.sh/?url=${e.target[0].value}`);
+    const url = encodeURIComponent(e.target[0].value);
+    window.location.replace(`https://visionapi-aqfcntfagh.now.sh/?url=${url}`);
   }
   render() {
     return (
